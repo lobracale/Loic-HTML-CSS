@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="formulaire.css" />
+    <title>formulaire</title>
+  </head>
+  <body>
+    <h1>Formulaire</h1>
+    <!-- Formulaire de contact -->
+    <!-- <form> : début du formulaire.
+
+    action="msg.php" : indique que lorsque le formulaire sera soumis, les données seront envoyées au fichier msg.php (qui peut être un script côté serveur pour traiter les données).
+
+    method="post" : précise que les données seront envoyées en utilisant la méthode POST, ce qui permet d’envoyer des informations de façon plus sécurisée et sans les afficher dans l’URL. 
+    method="GET" : les données sont envoyées dans l'URL, ce qui peut être moins sécurisé pour des informations sensibles.
+    -->
+    <form action="msg.php" method="post">
+      <!-- <label> : étiquette pour un champ de formulaire. L’attribut for lie l’étiquette à un champ spécifique en utilisant l’ID du champ. -->
+      <label for="name">Nom:</label>
+      <!-- <input> : champ de saisie de texte. L’attribut type="text" indique qu’il s’agit d’un champ de texte, id="name" est l’identifiant du champ, name="name" est le nom du champ qui sera envoyé avec le formulaire, et required indique que ce champ est obligatoire. -->
+      <input type="text" id="name" name="name" required />
+      <!-- Champ de saisie pour l'email -->
+      <label for="email">Email:</label>
+      <!-- Champ de saisie de texte pour l'email. L'attribut type="email" indique qu'il s'agit d'un champ pour une adresse email, ce qui permet une validation automatique du format de l'email. -->
+      <input type="email" id="email" name="email" required />
+      <!-- Champ de saisie pour le message -->
+      <label for="message">Message:</label>
+      <!-- <textarea> : champ de saisie de texte multilignes. L’attribut rows="4" indique le nombre de lignes visibles dans le champ. -->
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <!-- <button> : bouton pour soumettre le formulaire. -->
+      <!-- L’attribut type="submit" indique que ce bouton soumettra le formulaire lorsqu’il sera cliqué. -->
+      <button type="submit">Envoyer</button>
+    </form>
+  </body>
+</html>

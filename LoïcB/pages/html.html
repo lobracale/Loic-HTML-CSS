@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="../css/Global.css"><title>COURS SIO WEB | HTML</title></head>
+<body>
+<header>
+  <nav>
+    <div class="logo">Cours SIO Web</div>
+    <div class="menu" id="menu">
+      <a href="../index.html">Accueil</a>
+      <a href="html.html">HTML</a>
+      <a href="css.html">CSS</a>
+      <a href="linux_command_line.html">Commandes Linux</a>
+      <a href="en_construction.html">Autres pages</a>
+    </div>
+    <div class="burger" id="burger" aria-label="Menu" aria-expanded="false" role="button" tabindex="0"><div></div><div></div><div></div></div>
+  </nav>
+</header>
+<main>
+<h1>Introduction à HTML</h1>
+<p>HTML (HyperText Markup Language) est le langage utilisé pour structurer les pages web à l'aide de balises et d'attributs.</p>
+<p>Il permet notamment de définir les titres, paragraphes, liens, images, listes et formulaires d'une page.</p>
+<section><h2>Les balises HTML</h2><p>Quelques balises courantes :</p><ul><li>&lt;h1&gt; à &lt;h6&gt; : titres</li><li>&lt;p&gt; : paragraphe</li><li>&lt;a&gt; : lien</li><li>&lt;img&gt; : image</li><li>&lt;div&gt; : conteneur</li></ul><h2>Attributs HTML</h2><ul><li>class : associe une classe CSS</li><li>id : identifiant unique</li><li>src : source d'une ressource</li><li>href : destination d'un lien</li></ul></section>
+<section><h2>Exemple de code HTML</h2><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+  &lt;head&gt;...&lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Bienvenue&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre></section>
+<section><h2>Ressources supplémentaires</h2><ul><li><a href="https://developer.mozilla.org/fr/docs/Web/HTML">Documentation MDN sur HTML</a></li><li><a href="https://www.w3schools.com/html/">Tutoriel W3Schools HTML</a></li></ul></section>
+</main>
+<footer>
+  <h2>Contact</h2>
+  <form class="contact-form" action="#" method="post">
+    <!-- Champ pour saisir le nom : type text crée une zone de texte ; name identifie la donnée ; required rend le champ obligatoire. -->
+    <label for="username">Nom</label>
+    <input type="text" id="username" name="username" required />
+
+    <!-- Champ pour saisir l'adresse e-mail : type email vérifie le format de l'adresse ; name identifie la donnée ; required rend le champ obligatoire. -->
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required />
+
+    <!-- Zone de texte pour le message : name identifie la donnée envoyée. -->
+    <label for="message">Message</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <!-- Bouton d'envoi : type submit demande au navigateur de soumettre le formulaire. -->
+    <button type="submit">Envoyer</button>
+  </form>
+  <p>&copy; 2023 Cours SIO Web. Tous droits réservés.</p>
+</footer>
+<script src="../js/main.js"></script>
+</body></html>

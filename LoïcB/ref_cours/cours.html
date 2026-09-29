@@ -1,0 +1,83 @@
+<!-- 
+Le doctype HTML (Document Type Declaration) est une instruction placée en tout début d’un document HTML, qui indique au navigateur la version du langage HTML utilisée pour la page. Cela permet au navigateur de rendre la contenu de manière correcte et conforme aux standards. -->
+<!DOCTYPE html>
+<!-- Début du document HTML. 
+La balise <html lang="en"> indique le début d’un document HTML et précise que la langue du contenu est l’anglais. L’attribut lang="en" aide les navigateurs, les moteurs de recherche et les technologies d’assistance à comprendre la langue principale de la page, ce qui peut améliorer l’accessibilité et le référencement. -->
+<html lang="en">
+  <!-- La balise <head> contient des métadonnées sur le document, telles que le jeu de caractères utilisé, les paramètres de la fenêtre d’affichage et le titre de la page. -->
+  <head>
+    <!-- La balise <meta> est utilisée pour spécifier des métadonnées, comme le jeu de caractères utilisé (UTF-8)-->
+    <meta charset="UTF-8" />
+    <!-- La balise <meta name="viewport"> est utilisée pour contrôler la mise en page sur les appareils mobiles.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- La balise <link> est utilisée pour lier des ressources externes, comme des feuilles de style CSS. -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- La balise <title> définit le titre du document, qui apparaît dans l’onglet du navigateur. -->
+    <title>titre dans l'onglet</title>
+  </head>
+  <!-- Le corps du document HTML, où le contenu visible de la page est placé. -->
+  <body>
+    <!-- La balise <header> est utilisée pour définir l’en-tête de la page, qui peut contenir des éléments comme le titre, le logo ou la navigation. -->
+    <header>
+      <!-- la balise <nav> est utilisée pour définir une section de navigation. -->
+      <nav>
+        <!-- la balise <ul> est utilisée pour définir une liste non ordonnée. -->
+        <ul>
+          <!-- la balise <li> est utilisée pour définir un élément de liste. -->
+          <li>
+            <!-- la balise <a> est utilisée pour créer un lien hypertexte. L’attribut href spécifie la destination du lien. -->
+            <a href="https://www.google.com">Section 1</a>
+          </li>
+          <li>
+            <!-- la balise <a> est utilisée pour créer un lien hypertexte. L’attribut href spécifie la destination du lien. dans notre cas une id="section2" -->
+            <a href="#section2">Section 2</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- La balise <main> est utilisée pour définir le contenu principal de la page. -->
+    <main>
+      <!-- La balise <h1> est utilisée pour définir le titre principal de la page. -->
+      <!-- Il est recommandé d’utiliser une seule balise <h1> par page pour le titre principal, suivi de balises <h2>, <h3>, etc. pour les sous-titres. -->
+      <h1>Titre principal de la page</h1>
+      <!-- La balise <section> est utilisée pour définir une section du document. -->
+      <section id="section1">
+        <h2>Section 1</h2>
+        <!-- La balise <p> est utilisée pour définir un paragraphe de texte. -->
+        <p>Contenu de la section 1.</p>
+        <!-- La balise <article> est utilisée pour définir un article ou un contenu autonome. -->
+        <article>
+          <!-- La balise <div> est utilisée pour créer une division ou un conteneur dans le document.  Elle est souvent utilisée pour regrouper des éléments afin de les styliser ou de-->
+          <div>
+            <!-- La balise <img> est utilisée pour afficher une image. L’attribut src spécifie le chemin de l’image, et l’attribut alt fournit une description alternative de l’image. 
+             -->
+            <img
+              src="dossier/nom_de_l_image.jpg"
+              alt="description de l'image"
+            />
+          </div>
+          <!-- La balise <h3> est utilisée pour définir un sous-titre de niveau 3. -->
+          <h3>Sous-section 1</h3>
+          <!-- La balise <p> est utilisée pour définir un paragraphe de texte. -->
+          <p>Contenu de la sous-section 1.</p>
+        </article>
+      </section>
+      <!-- La balise <section> est utilisée pour définir une section du document. 
+      L’attribut id permet de créer un lien vers cette section depuis d’autres parties du document ou depuis des liens externes. 
+      Dans notre cas, l'id="section2" permet de faire un lien vers cette section depuis le menu de navigation. -->
+      <section id="section2">
+        <h2>Section 2</h2>
+        <p>Contenu de la section 2.</p>
+      </section>
+    </main>
+    <!-- La balise <footer> est utilisée pour définir le pied de page du document, qui peut contenir des informations de copyright, des liens vers des politiques de confidentialité, etc. -->
+    <footer>
+      <p>&copy; 2023 Mon site web</p>
+      <!-- La balise <a> est utilisée pour créer un lien hypertexte. L’attribut href spécifie la destination du lien. -->
+      <a href="https://www.example.com">Lien vers un autre site</a>
+    </footer>
+    <!-- script -->
+    <!-- La balise <script> est utilisée pour inclure du code JavaScript dans le document. L’attribut src spécifie le chemin du fichier JavaScript externe. -->
+    <script src="script.js"></script>
+  </body>
+</html>

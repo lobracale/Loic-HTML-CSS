@@ -1,0 +1,49 @@
+/* body et un selecteur par le nom de la balise <body>*/
+body {
+  /* font-family permet de definir la police de caractere */
+  font-family: Arial, sans-serif;
+  /* background-color permet de definir la couleur de fond */
+  background-color: #f4f4f4;
+  /* color permet de definir la couleur du texte */
+  color: #333;
+  /* margin permet de definir la marge autour du contenu */
+  margin: 0;
+  /* padding permet de definir l'espace interieur */
+  padding: 0;
+  /* line-height permet de definir l'espacement entre les lignes */
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  /* list-style permet de definir le style de la liste et none supprime les puces */
+  list-style: none;
+  /* display permet de definir le mode d'affichage et flex permet de disposer les elements en ligne */
+  display: flex;
+  padding: 0;
+}
+
+nav ul li {
+  /* margin-right permet de definir l'espace entre les elements de la liste */
+  margin-right: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  /* text-align permet de definir l'alignement du texte */
+  text-align: center;
+  padding: 10px 0;
+}
+footer p {
+  margin: 0;
+}
