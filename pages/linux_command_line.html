@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="../css/Global.css"><link rel="stylesheet" href="../css/linux_command_line.css"><title>Commandes Linux</title></head><body>
+<header>
+  <nav>
+    <div class="logo">Cours SIO Web</div>
+    <div class="menu" id="menu">
+      <a href="../index.html">Accueil</a>
+      <a href="html.html">HTML</a>
+      <a href="css.html">CSS</a>
+      <a href="linux_command_line.html">Commandes Linux</a>
+      <a href="en_construction.html">Autres pages</a>
+    </div>
+    <div class="burger" id="burger" aria-label="Menu" aria-expanded="false" role="button" tabindex="0"><div></div><div></div><div></div></div>
+  </nav>
+</header><main class="linux-page"><h1>Commandes Linux</h1><p>Voici un mémento des principales commandes Linux utilisées en SISR.</p><table class="linux-table"><thead><tr><th>Commande</th><th>Description</th><th>Exemple d'utilisation</th></tr></thead><tbody><tr><td class="command">ls</td><td>Liste les fichiers et dossiers</td><td><code>ls -l</code></td></tr><tr><td class="command">cd</td><td>Change de répertoire</td><td><code>cd /home/user</code></td></tr><tr><td class="command">pwd</td><td>Affiche le répertoire courant</td><td><code>pwd</code></td></tr><tr><td class="command">mkdir</td><td>Crée un répertoire</td><td><code>mkdir documents</code></td></tr><tr><td class="command">rmdir</td><td>Supprime un répertoire vide</td><td><code>rmdir documents</code></td></tr><tr><td class="command">touch</td><td>Crée un fichier vide</td><td><code>touch fichier.txt</code></td></tr><tr><td class="command">cp</td><td>Copie un fichier ou dossier</td><td><code>cp fichier.txt sauvegarde.txt</code></td></tr><tr><td class="command">mv</td><td>Déplace ou renomme</td><td><code>mv ancien.txt nouveau.txt</code></td></tr><tr><td class="command">rm</td><td>Supprime un fichier</td><td><code>rm fichier.txt</code></td></tr><tr><td class="command">cat</td><td>Affiche le contenu d’un fichier</td><td><code>cat fichier.txt</code></td></tr><tr><td class="command">grep</td><td>Recherche du texte</td><td><code>grep "mot" fichier.txt</code></td></tr><tr><td class="command">chmod</td><td>Modifie les permissions</td><td><code>chmod 755 script.sh</code></td></tr><tr><td class="command">sudo</td><td>Exécute une commande avec les droits administrateur</td><td><code>sudo apt update</code></td></tr><tr><td class="command">apt</td><td>Gère les paquets Debian/Ubuntu</td><td><code>sudo apt install nginx</code></td></tr><tr><td class="command">man</td><td>Affiche le manuel d’une commande</td><td><code>man ls</code></td></tr></tbody></table><section><h2>Structure de la table</h2><p><code>&lt;table&gt;</code> crée le tableau, <code>&lt;thead&gt;</code> contient l'en-tête, <code>&lt;tbody&gt;</code> contient les données, <code>&lt;tr&gt;</code> crée une ligne, <code>&lt;th&gt;</code> une cellule d'en-tête et <code>&lt;td&gt;</code> une cellule de données.</p></section></main>
+<footer>
+  <h2>Contact</h2>
+  <form class="contact-form" action="#" method="post">
+    <!-- Champ pour saisir le nom : type text crée une zone de texte ; name identifie la donnée ; required rend le champ obligatoire. -->
+    <label for="username">Nom</label>
+    <input type="text" id="username" name="username" required />
+
+    <!-- Champ pour saisir l'adresse e-mail : type email vérifie le format de l'adresse ; name identifie la donnée ; required rend le champ obligatoire. -->
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required />
+
+    <!-- Zone de texte pour le message : name identifie la donnée envoyée. -->
+    <label for="message">Message</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <!-- Bouton d'envoi : type submit demande au navigateur de soumettre le formulaire. -->
+    <button type="submit">Envoyer</button>
+  </form>
+  <p>&copy; 2023 Cours SIO Web. Tous droits réservés.</p>
+</footer>
+<script src="../js/main.js"></script>
+</body></html>

@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eaf4f8;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #003b0c;
+  color: #fff;
+}
+
+nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 20px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+.menu a:hover,
+.menu a:focus {
+  background: rgba(255, 255, 255, 0.15);
+  text-decoration: underline;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+main {
+  padding: 30px 20px;
+  background-color: #eaf4f8;
+  min-height: 60vh;
+}
+
+main > h1,
+main > p,
+main > section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+article {
+  flex: 1 1 280px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  transform: translateX(-30px);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+article.fade-in {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: #16803c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0f642e;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+.icon {
+  font-size: 3rem;
+}
+
+.kotlinLogo {
+  width: 3rem;
+  height: auto;
+}
+
+.htmlColor { color: #e44d26; }
+.cssColor { color: #2965f1; }
+.jsColor { color: #f7df1e; }
+.phpColor { color: #8993be; }
+.pythonColor { color: #3776ab; }
+.gitColor { color: #f05032; }
+.githubColor { color: #181717; }
+.sqlColor { color: #e34f26; }
+.linuxColor { color: #fcc624; }
+.terminalColor { color: #4d4d4d; }
+.angularColor { color: #dd0031; }
+
+pre {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  overflow-x: auto;
+  background: #202124;
+  color: #f8f8f2;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #f1f1f1;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font: inherit;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  margin-top: 15px;
+}
+
+@media (max-width: 1000px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #003b0c;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 260px;
+    padding: 10px;
+    z-index: 10;
+    border-radius: 6px;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .d-flex {
+    flex-direction: column;
+  }
+}

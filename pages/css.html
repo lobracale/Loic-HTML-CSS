@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="../css/Global.css"><title>COURS SIO WEB | CSS</title></head>
+<body>
+<header>
+  <nav>
+    <div class="logo">Cours SIO Web</div>
+    <div class="menu" id="menu">
+      <a href="../index.html">Accueil</a>
+      <a href="html.html">HTML</a>
+      <a href="css.html">CSS</a>
+      <a href="linux_command_line.html">Commandes Linux</a>
+      <a href="en_construction.html">Autres pages</a>
+    </div>
+    <div class="burger" id="burger" aria-label="Menu" aria-expanded="false" role="button" tabindex="0"><div></div><div></div><div></div></div>
+  </nav>
+</header>
+<main><h1>Introduction à CSS</h1><p>CSS (Cascading Style Sheets) décrit la présentation d'un document HTML : couleurs, polices, marges et disposition.</p><p>CSS permet de séparer le contenu de la présentation et d'appliquer des styles cohérents à l'ensemble d'un site.</p><section><h2>Exemple CSS</h2><pre><code>body {
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+}</code></pre></section></main>
+<footer>
+  <h2>Contact</h2>
+  <form class="contact-form" action="#" method="post">
+    <!-- Champ pour saisir le nom : type text crée une zone de texte ; name identifie la donnée ; required rend le champ obligatoire. -->
+    <label for="username">Nom</label>
+    <input type="text" id="username" name="username" required />
+
+    <!-- Champ pour saisir l'adresse e-mail : type email vérifie le format de l'adresse ; name identifie la donnée ; required rend le champ obligatoire. -->
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required />
+
+    <!-- Zone de texte pour le message : name identifie la donnée envoyée. -->
+    <label for="message">Message</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <!-- Bouton d'envoi : type submit demande au navigateur de soumettre le formulaire. -->
+    <button type="submit">Envoyer</button>
+  </form>
+  <p>&copy; 2023 Cours SIO Web. Tous droits réservés.</p>
+</footer>
+<script src="../js/main.js"></script>
+</body></html>
